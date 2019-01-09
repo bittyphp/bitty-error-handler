@@ -7,6 +7,10 @@
 
 Bitty comes with a middleware implementation for error handling.
 
+## Work In Progress
+
+This is a work in progress. Basically everything still needs to be done.
+
 ## Installation
 
 It's best to install using [Composer](https://getcomposer.org/).
