@@ -1,5 +1,5 @@
 {
-    "name": "bittyphp/bitty-error-handler",
+    "name": "bittyphp/error-handler",
     "type": "library",
     "description": "Error handler middleware.",
     "license": "MIT",
@@ -11,8 +11,8 @@
     ],
     "require": {
         "php": ">=7.1.0",
-        "bittyphp/bitty-http": "^2.0",
-        "bittyphp/bitty-middleware": "^2.0",
+        "bittyphp/http": "^2.0",
+        "bittyphp/middleware": "^2.0",
         "psr/http-message": "^1.0"
     },
     "require-dev": {
