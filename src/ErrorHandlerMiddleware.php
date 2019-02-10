@@ -18,7 +18,7 @@ class ErrorHandlerMiddleware implements MiddlewareInterface
     {
         try {
             return $handler->handle($request);
-        } catch (\Exception $exception) {
+        } catch (\Throwable $exception) {
             return $this->handleException($exception);
         }
     }
@@ -26,11 +26,11 @@ class ErrorHandlerMiddleware implements MiddlewareInterface
     /**
      * Handles exceptions.
      *
-     * @param \Exception $exception
+     * @param \Throwable $exception
      *
      * @return ResponseInterface
      */
-    public function handleException(\Exception $exception): ResponseInterface
+    public function handleException(\Throwable $exception): ResponseInterface
     {
         if ($exception instanceof HttpException) {
             return new Response($exception->getMessage(), $exception->getCode());
